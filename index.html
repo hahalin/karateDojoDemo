@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <style>
+    .cfont {
+      font-family: 標楷體;
+    }
+
+    #mainTitle {
+      font-size: 28px;
+    }
+
+    #mainTitle-en {
+      margin-left: 15px;
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+    }
+
+    .carousel-item video {
+      width: 100%;
+      height: 100%;
+      /* This will make the video stretch to the container's bounds */
+      object-fit: cover;
+      /* This will ensure that the video covers the area without distortion */
+    }
+
+    /* .navbar-nav .nav-item {
+      font-size: 20px;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.jpg" height="75" alt="Logo" loading="lazy" />
+          <label class="cfont" id="mainTitle">極真會館中村道場台灣支部</label>
+        </a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <!-- <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img src="img/logo.jpg" height="75" alt="Logo"
+              loading="lazy" />
+          </a> -->
+          <!-- <div id="mainTitle" class="cfont">
+            <label>極真會館中村道場台灣支部</label>
+            <label id="mainTitle-en">IKO NAKAMURA TAIWAN</label>
+          </div> -->
+
+
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5 " aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#"  >道場沿革</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">課程</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">道場教練</a>
+            </li>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown " style="display: none;">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">道場沿革</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">商店</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">聯絡我們</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active" data-mdb-interval="10000">
+          <video class="img-fluid" autoplay muted>
+            <source src="img/home1.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5>
+            <p>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" data-mdb-interval="3000">
+          <img src="img/home2.jpg" class="d-block w-100" alt="Sunset Over the City" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>2023年冬季合宿</h5>
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" data-mdb-interval="10000">
+          <video class="img-fluid" autoplay muted>
+            <source src="img/home2.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <div class="container my-5">
+      <h2 class="cfont">最新活動</h2>
+      <!-- Start of a single event row -->
+      <div class="row g-3 mb-4 bg-white shadow-sm rounded">
+        <div class="col-md-3">
+          <img src="img/百人組手.jpg" class="img-fluid rounded-start" alt="Event Image" style="height:400px">
+        </div>
+        <div class="col-md-9 d-flex flex-column justify-content-between">
+          <div class="p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="pe-3 text-center">
+                <h5 class="mb-0 text-primary">5</h5>
+                <small class="text-secondary">11月</small>
+              </div>
+              <h5 class="mb-0">百回合組手交流會</h5>
+            </div>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0">Sunday at 8:30 AM</li>
+              <li class="list-group-item border-0">屏東體育館</li>
+            </ul>
+            <p>百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容
+              百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容
+            </p>
+          </div>
+          <div class="px-3 pb-5">
+            <a href="#" class="btn btn-primary">Register</a>
+            <a href="#" class="btn btn-outline-secondary">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of a single event row -->
+
+      <!-- Start of a single event row -->
+      <div class="row g-3 mb-4 bg-white shadow-sm rounded">
+        <div class="col-md-3">
+          <img src="img/百人組手.jpg" class="img-fluid rounded-start" alt="Event Image" style="height:400px">
+        </div>
+        <div class="col-md-9 d-flex flex-column justify-content-between">
+          <div class="p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="pe-3 text-center">
+                <h5 class="mb-0 text-primary">5</h5>
+                <small class="text-secondary">11月</small>
+              </div>
+              <h5 class="mb-0">百回合組手交流會</h5>
+            </div>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0">Sunday at 8:30 AM</li>
+              <li class="list-group-item border-0">屏東體育館</li>
+            </ul>
+            <p>百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容
+              百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容百回合組手交流會的內容
+            </p>
+          </div>
+          <div class="px-3 pb-5">
+            <a href="#" class="btn btn-primary">Register</a>
+            <a href="#" class="btn btn-outline-secondary">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of a single event row -->
+
+      
+
+      <!-- Repeat the above block for each event -->
+    </div>
+    
+    <div class="container">
+      <h2 class="cfont">
+        台灣支部長-黃重凱師範
+      </h2>
+      <div class="row text-center">
+        <div class="col">
+          <img src="img/huang.jpg" class="img-fluid" style="height: 600px; width: auto; object-fit: cover;" />
+        </div>
+      </div>
+      
+      
+      <br/><br/>
+      <h2 class="cfont">指導員群</h2>
+      <div class="row text-center">
+        <div class="col">
+          <img src="img/教練群.jpg" class="img-fluid" style="height: 600px; width: auto; object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End your project here-->
+
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>

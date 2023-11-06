@@ -37,21 +37,19 @@
       display: flex; /* 使用flexbox布局 */
       justify-content: center; /* 水平居中 */
       align-items: center; /* 垂直居中 */
-      height: 728px; /* 設定一致的高度 */
     }
     
     .carousel-item img {
-      max-height: 100%; /* 使圖片或視頻不超過carousel-item的高度 */
-      width: auto; /* 寬度自動根據高度調整 */
+      
+      width: 100%; /* 寬度始終為100% */
+      height: auto; /* 高度自動 */
       object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
     }
     
     .carousel-item video {
-      max-height: 100%; /* 使圖片或視頻不超過carousel-item的高度 */
-      width: auto; /* 寬度自動根據高度調整 */
-      /* This will make the video stretch to the container's bounds */
-      object-fit: cover;
-      /* This will ensure that the video covers the area without distortion */
+      width: 100%; /* 寬度始終為100% */
+      height: auto; /* 高度自動 */
+      object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
     }
 
     .carousel-caption {

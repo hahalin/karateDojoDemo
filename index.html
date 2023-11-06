@@ -29,6 +29,19 @@
       font-family: Roboto, sans-serif;
     }
 
+    .carousel-item {
+      display: flex; /* 使用flexbox布局 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 720px; /* 設定一致的高度 */
+    }
+    
+    .carousel-item img {
+      max-height: 100%; /* 使圖片或視頻不超過carousel-item的高度 */
+      width: auto; /* 寬度自動根據高度調整 */
+      object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
+    }
+    
     .carousel-item video {
       width: 100%;
       height: 100%;

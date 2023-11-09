@@ -14,57 +14,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
-  <style>
-    .cfont {
-      font-family: 標楷體;
-    }
-
-    #mainTitle {
-      font-size: 28px;
-    }
-
-    #mainTitle-en {
-      margin-left: 15px;
-      font-size: 18px;
-      font-family: Roboto, sans-serif;
-    }
-    
-    .carousel-inner {
-      position: relative;
-    }
-    
-    .carousel-item {
-      display: flex; /* 使用flexbox布局 */
-      justify-content: center; /* 水平居中 */
-      align-items: center; /* 垂直居中 */
-    }
-    
-    .carousel-item img {
-      
-      width: 100%; /* 寬度始終為100% */
-      height: auto; /* 高度自動 */
-      object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
-    }
-    
-    .carousel-item video {
-      width: 100%; /* 寬度始終為100% */
-      height: auto; /* 高度自動 */
-      object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
-    }
-
-    .carousel-caption {
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.4); /* 黑色背景，50%透明度 */
-      padding: 10px; /* 添加一些內邊距 */
-      border-radius: 5px; /* 如果你喜歡，可以添加圓角 */
-      width: 70%; /* 或者你可以指定一個寬度 */
-      text-align: center; /* 確保文字居中 */
-    }
-    /* .navbar-nav .nav-item {
-      font-size: 20px;
-    } */
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -102,11 +52,23 @@
           <!-- Left links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5 " aria-current="page" href="#">首頁</a>
+              <a class="nav-link active cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5 " aria-current="page" href="index.html">首頁</a>
             </li>
             <li class="nav-item">
               <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">道場沿革</a>
             </li>
+            <li class="nav-item dropdown " >
+              <a class="nav-link dropdown-toggle cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                最新活動
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="gallery.html">照片集</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">課程</a>
             </li>

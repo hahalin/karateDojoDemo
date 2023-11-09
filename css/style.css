@@ -1,0 +1,49 @@
+.cfont {
+    font-family: 標楷體;
+  }
+
+  #mainTitle {
+    font-size: 26px;
+  }
+
+  #mainTitle-en {
+    margin-left: 15px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-item {
+    display: flex; /* 使用flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .carousel-item img {
+    
+    width: 100%; /* 寬度始終為100% */
+    height: auto; /* 高度自動 */
+    object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
+  }
+  
+  .carousel-item video {
+    width: 100%; /* 寬度始終為100% */
+    height: auto; /* 高度自動 */
+    object-fit: cover; /* 覆蓋整個區域，可能會剪切部分內容 */
+  }
+
+  .carousel-caption {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.4); /* 黑色背景，50%透明度 */
+    padding: 10px; /* 添加一些內邊距 */
+    border-radius: 5px; /* 如果你喜歡，可以添加圓角 */
+    width: 70%; /* 或者你可以指定一個寬度 */
+    text-align: center; /* 確保文字居中 */
+  }
+  /* .navbar-nav .nav-item {
+    font-size: 20px;
+  } */

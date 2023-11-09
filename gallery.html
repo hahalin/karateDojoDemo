@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>中村道場台灣支部</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/kanku_favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/glightbox.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+    <!-- Start your project here-->
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.jpg" height="75" alt="Logo" loading="lazy" />
+                    <label class="cfont" id="mainTitle">極真會館中村道場台灣支部</label>
+                </a>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5 " aria-current="page"
+                                href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">道場沿革</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#"
+                                id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                最新活動
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5"
+                                        href="gallery.html">照片集</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">課程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">道場教練</a>
+                        </li>
+                        <!-- Navbar dropdown -->
+                        <li class="nav-item dropdown " style="display: none;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">道場沿革</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">商店</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cfont fs-4 fs-lg-3 fs-md-5 fs-sm-5" href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar --> <!-- Navbar -->
+    </div>
+    <!-- End your project here-->
+
+    <div class="container">
+        <div class="row" id="galleryRow">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- <h1 class="gallery-title">Gallery</h1> -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-default filter-button active" id="all" onclick="call(this.id)">全部</button>
+                    <button class="btn btn-default filter-button" id="a" onclick="call(this.id)">百回組手</button>
+                    <button class="btn btn-default filter-button" id="b" onclick="call(this.id)">冬季審查</button>
+                    
+                </div>
+            </div>
+
+            <a href="img/gallery/a/1.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/1.jpg">
+            </a>
+            <a href="img/gallery/a/2.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/2.jpg">
+            </a>
+            <a href="img/gallery/a/3.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/3.jpg">
+            </a>
+            <a href="img/gallery/a/4.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/4.jpg">
+            </a>
+            <a href="img/gallery/a/5.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/5.jpg">
+            </a>
+            <a href="img/gallery/a/6.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/6.jpg">
+            </a>
+            <a href="img/gallery/a/7.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter a ">
+                <img class="galleryImg"
+                src="img/gallery/a/7.jpg">
+            </a>
+
+            <a href="img/gallery/b/1.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/1.jpg">
+            </a>
+            <a href="img/gallery/b/2.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/2.jpg">
+            </a>
+            <a href="img/gallery/b/3.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/3.jpg">
+            </a>
+            <a href="img/gallery/b/4.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/4.jpg">
+            </a>
+            <a href="img/gallery/b/5.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/5.jpg">
+            </a>
+            <a href="img/gallery/b/6.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/6.jpg">
+            </a>
+            <a href="img/gallery/b/7.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/7.jpg">
+            </a>
+
+            <a href="img/gallery/b/8.jpg"
+                class="glightbox gallery_product col-6 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter b ">
+                <img class="galleryImg"
+                src="img/gallery/b/8.jpg">
+            </a>
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/glightbox.min.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>
